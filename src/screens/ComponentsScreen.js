@@ -6,7 +6,7 @@ function ComponentsScreen() {
 
   return (
     <View>
-      <Text style={styles.textStyle}>This is the components screen!</Text>;
+      <Text style={styles.subtitleStyle}>This is the components screen!</Text>;
       <Text> {greeting} </Text>
     </View>
   );
@@ -15,6 +15,9 @@ function ComponentsScreen() {
 const styles = StyleSheet.create({
   textStyle: {
     fontSize: 30,
+  },
+  subtitleStyle: {
+    fontSize: 20,
   },
 });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Flatlist} from 'react-native';
 
-function ListScreen() {
+const ListScreen = () => {
   const friends = [
     {name: 'Friend #1'},
     {name: 'Friend #2'},
@@ -21,6 +21,6 @@ function ListScreen() {
       }}
     />
   );
-}
+};
 
 export default ListScreen;

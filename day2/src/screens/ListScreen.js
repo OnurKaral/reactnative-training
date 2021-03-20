@@ -10,7 +10,7 @@ function ListScreen({navigation}) {
     .get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(function (response) {
       // handle success
-      console.log(response);
+      console.log(response.data);
     })
     .catch(function (error) {
       // handle error

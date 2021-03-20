@@ -37,6 +37,7 @@ function App() {
           }}
         />
         <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="List" component={ListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

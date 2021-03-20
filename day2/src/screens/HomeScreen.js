@@ -6,7 +6,7 @@ function HomeScreen({navigation}) {
       <Text>Home Screen</Text>
       <Button
         title="Go to Details"
-        onPress={() => navigation.navigate('List')}
+        onPress={() => navigation.navigate('Get')}
       />
     </View>
   );

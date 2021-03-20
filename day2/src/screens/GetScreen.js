@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import {Button, View, Text, StyleSheet} from 'react-native';
 
-function ListScreen({navigation}) {
+function GetScreen({navigation}) {
   const axios = require('axios').default;
 
   axios
@@ -27,4 +27,4 @@ function ListScreen({navigation}) {
   );
 }
 
-export default ListScreen;
+export default GetScreen;

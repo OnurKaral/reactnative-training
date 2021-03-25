@@ -23,6 +23,12 @@ function GetScreen({navigation}) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>ListScreen</Text>
+      <Image
+        style={styles.tinyLogo}
+        source={{
+          uri: hdurl,
+        }}
+      />
     </View>
   );
 }

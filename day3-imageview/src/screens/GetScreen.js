@@ -10,7 +10,7 @@ function GetScreen({navigation}) {
     .get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(function (response) {
       // handle success
-      console.log(response.data);
+      console.log(response.data.hdurl);
     })
     .catch(function (error) {
       // handle error
@@ -23,6 +23,12 @@ function GetScreen({navigation}) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>ListScreen</Text>
+      <Image
+        style={styles.tinyLogo}
+        source={{
+          uri: hdurl,
+        }}
+      />
     </View>
   );
 }

@@ -5,7 +5,6 @@ import {Button, View, Text, StyleSheet} from 'react-native';
 
 function GetScreen({navigation}) {
   const axios = require('axios').default;
-
   axios
     .get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(function (response) {
@@ -15,20 +14,11 @@ function GetScreen({navigation}) {
     .catch(function (error) {
       // handle error
       console.log(error);
-    })
-    .then(function () {
-      // always executed
     });
 
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>ListScreen</Text>
-      <Image
-        style={styles.tinyLogo}
-        source={{
-          uri: hdurl,
-        }}
-      />
+      <Text>GetScreen</Text>
     </View>
   );
 }

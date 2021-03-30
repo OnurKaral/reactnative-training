@@ -26,6 +26,7 @@ function GetScreen({navigation}) {
       // handle success
 
       url = response.data.hdurl;
+      <Text> {response.data.hdurl}</Text>;
     })
     .catch(function (error) {
       // handle error
@@ -36,15 +37,8 @@ function GetScreen({navigation}) {
     });
 
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text></Text>
-      <Image
-        style={styles.tinyLogo}
-        source={{
-          uri: url,
-        }}
-      />
-    </View>
+    <View
+      style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}></View>
   );
 }
 

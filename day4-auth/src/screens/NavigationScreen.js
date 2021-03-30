@@ -4,7 +4,7 @@ import {Button, View, Text, StyleSheet} from 'react-native';
 function NavigationScreen({navigation}) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Details Screen</Text>
+      <Text>Navigation Screen</Text>
       <Button
         title="Go to Navigation... again"
         onPress={() => navigation.push('Details')}

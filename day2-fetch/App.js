@@ -5,7 +5,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Button, View, Text, StyleSheet} from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
-import ComponentsScreen from './src/screens/ComponentsScreen';
 import GetScreen from './src/screens/GetScreen';
 
 const Stack = createStackNavigator();

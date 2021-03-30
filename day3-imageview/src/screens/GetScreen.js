@@ -17,13 +17,14 @@ const styles = StyleSheet.create({
 });
 
 function GetScreen({navigation}) {
-  const url = '';
+  const url;
   const axios = require('axios').default;
 
   axios
     .get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(function (response) {
       // handle success
+
       url = response.data.hdurl;
     })
     .catch(function (error) {

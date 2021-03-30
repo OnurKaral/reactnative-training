@@ -1,12 +1,12 @@
 import React from 'react';
 import {Button, View, Text, StyleSheet} from 'react-native';
 
-function DetailScreen({navigation}) {
+function NavigationScreen({navigation}) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Details Screen</Text>
       <Button
-        title="Go to Details... again"
+        title="Go to Navigation... again"
         onPress={() => navigation.push('Details')}
       />
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
@@ -19,4 +19,4 @@ function DetailScreen({navigation}) {
   );
 }
 
-export default DetailScreen;
+export default NavigationScreen;
